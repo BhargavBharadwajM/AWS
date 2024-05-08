@@ -1,0 +1,78 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(135deg, #8E2DE2 10%, #4A00E0 100%);
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #4A00E0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #8E2DE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4A00E0;
+}
+
+#profileSaved {
+    text-align: center;
+    color: #8E2DE2;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#showProfile {
+    margin-top: 20px;
+}
+
+#EmployeeProfile {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#EmployeeProfile th,
+#EmployeeProfile td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+}
+
+#EmployeeProfile th {
+    background-color: #8E2DE2;
+    color: white;
+}
+
+#EmployeeProfile tr:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
