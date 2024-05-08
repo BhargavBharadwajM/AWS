@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRMS - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRMS - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      /* Stack elements vertically and center them using Flexbox */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Vertically center content */
+      align-items: center;
+      height: 100vh;
+      /* Subtle background image with transparency */
+      background-image: url("https://hrsprout.com/images/blog/best-business-hrms-software.png?v=1687157153559713844");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    h1 {
+      position: absolute; /* Position text absolutely for layering */
+      top: 5%; /* Move slightly higher */
+      left: 50%;
+      transform: translate(-50%, -50%); /* Offset to counteract absolute positioning */
+      text-align: center;
+      font-family: 'Dancing Script', cursive; /* Fancy font style */
+      font-size: 2.5em; /* Reduce welcome text size significantly */
+      color: #000; /* Dark black text */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+      background-color: #e0e0e0; /* Light gray background */
+      padding: 10px 20px; /* Add padding for spacing */
+      border-radius: 5px; /* Add rounded corners */
+      /* Inner shadow for subtle 3D effect */
+      box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2),
+                   0px 2px 5px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.2em; /* Add spacing between letters for uppercase */
+    }
+    .button-container {
+      display: flex;
+      /* Fully justify buttons with a fixed gap */
+      justify-content: center; /* Center buttons horizontally and vertically */
+      align-items: center;
+      width: 100%; /* Stretch buttons across the entire width */
+      margin: 2em 0; /* Increase spacing below the heading */
+    }
+    a {
+      color: #fff; /* White text for buttons */
+      text-decoration: none;
+      padding: 10px 20px; /* Reduce button padding slightly */
+      border: 1px solid rgba(255, 255, 255, 0.5); /* White border */
+      border-radius: 5px;
+      font-size: 1.2em; /* Reduce button text size slightly */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      transition: 0.3s;
+      /* Remove margin for buttons to fit within container width */
+      margin: 0;
+      /* Add subtle box shadow for buttons */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    a:hover {
+      background-color: rgba(0, 0, 0, 0.7); /* Darken on hover */
+    }
+    /* Style for "Add Employee" button (moved 35px to the right) */
+    .button-container a:first-child {
+      margin-right: 230px;
+    }
+    /* Style for "Manage Leave" button (moved 35px to the left) */
+    .button-container a:last-child {
+      margin-left: 230px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to HRMS</h1>
-    <p><a href="add_employee.html">Add Employee</a></p>
-    <p><a href="manage_leave.html">Manage Leave</a></p>
-    <p><a href="profile.html">Profile</a></p>
-    <!-- Add links to other HR functionalities -->
-</body>
+  <h1>WELCOME TO HRMS</h1>
+  
+  <div class="button-container">
+    <a href="add_employee.html">Add Employee</a>
+    <a href="manage_leave.html">Manage Leave</a>
+    <a href="profile.html">Add and View Employee<a>
+  </div>
+ </body>
 </html>
